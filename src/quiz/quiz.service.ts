@@ -143,6 +143,8 @@ export class QuizService {
           resultTypeName: type ? type.name : 'Unknown',
           imageUrl: type ? type.image_url : '',
           snippet: type ? type.description_preview : '',
+          is_paid: !!attempt.is_paid,
+          payment_id: attempt.payment_id || null,
         };
       }),
     );

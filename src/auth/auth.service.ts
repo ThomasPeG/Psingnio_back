@@ -14,6 +14,9 @@ export class AuthService {
     private configService: ConfigService,
   ) {
     const clientId = this.configService.get<string>('GOOGLE_CLIENT_ID');
+    if (!clientId) {
+      console.warn('⚠️ GOOGLE_CLIENT_ID is not defined. Google Login will fail.');
+    }
     this.googleClient = new OAuth2Client(clientId);
   }
 
