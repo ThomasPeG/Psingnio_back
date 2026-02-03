@@ -1,4 +1,4 @@
-import { IsArray, IsNumber, ValidateNested } from 'class-validator';
+import { IsArray, IsNumber, IsOptional, IsString, ValidateNested } from 'class-validator';
 import { Type } from 'class-transformer';
 
 class AnswerDto {
@@ -16,4 +16,8 @@ export class SubmitQuizDto {
   @ValidateNested({ each: true })
   @Type(() => AnswerDto)
   answers: AnswerDto[];
+
+  @IsOptional()
+  @IsString()
+  partner_attempt_id?: string;
 }

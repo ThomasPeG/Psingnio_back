@@ -32,6 +32,16 @@ export class QuizService {
       social_type_id: results.socialTypeId,
       money_type_id: results.moneyTypeId,
     });
+
+    if (dto.partner_attempt_id) {
+      const partnerAttempt = await this.quizAttemptModel
+        .findOne({ attemptId: dto.partner_attempt_id })
+        .exec();
+      if (partnerAttempt) {
+        attempt.linked_match_id = dto.partner_attempt_id;
+      }
+    }
+
     if (authHeader && authHeader.startsWith('Bearer ')) {
       const token = authHeader.substring(7);
       try {
@@ -99,6 +109,68 @@ export class QuizService {
         },
       };
     }
+  }
+
+  async getMatchReport(attemptIdA: string, attemptIdB: string) {
+    const attemptA = await this.quizAttemptModel
+      .findOne({ attemptId: attemptIdA })
+      .exec();
+    const attemptB = await this.quizAttemptModel
+      .findOne({ attemptId: attemptIdB })
+      .exec();
+
+    if (!attemptA || !attemptB) {
+      throw new NotFoundException('One or both attempts not found');
+    }
+
+    const typeA = await this.personalityTypesService.findOne(
+      attemptA.calculated_type_id,
+    );
+    const typeB = await this.personalityTypesService.findOne(
+      attemptB.calculated_type_id,
+    );
+
+    // Calculate compatibility
+    let score = 65; // Base score
+    let label = 'Desafío de Crecimiento';
+
+    const aMatchesB = typeA.pareja.some((p) => p.includes(`T${typeB.id}`));
+    const bMatchesA = typeB.pareja.some((p) => p.includes(`T${typeA.id}`));
+
+    if (aMatchesB && bMatchesA) {
+      score = 95;
+      label = 'Pareja Dinámica';
+    } else if (aMatchesB || bMatchesA) {
+      score = 85;
+      label = 'Complementarios';
+    } else if (typeA.id === typeB.id) {
+      score = 80;
+      label = 'Espejos';
+    }
+
+    // Analysis generation
+    const analysis = {
+      strengths: [
+        `Unión de ${typeA.lightBullets[0].split(',')[0]} y ${typeB.lightBullets[0].split(',')[0]}`,
+        typeA.lightBullets[1] || 'Visión compartida',
+        typeB.lightBullets[1] || 'Resiliencia mutua',
+      ],
+      challenges: [
+        `Riesgo de ${typeA.shadowBullets[0].split(',')[0]} frente a ${typeB.shadowBullets[0].split(',')[0]}`,
+        'Necesidad de equilibrar la energía',
+      ],
+      advice: `${typeA.mantra} Recuerden: ${typeB.mantra}`,
+    };
+
+    return {
+      compatibility_score: score,
+      label,
+      analysis,
+      archetypes: {
+        user_a: typeA.name,
+        user_b: typeB.name,
+      },
+    };
   }
 
   async markAsPaid(attemptId: string, paymentId: string) {

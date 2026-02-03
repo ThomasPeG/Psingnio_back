@@ -36,6 +36,9 @@ export class QuizAttempt {
   @Prop()
   payment_id: string;
 
+  @Prop()
+  linked_match_id: string; // ID of the partner's attempt (if referred)
+
   @Prop({ type: Types.ObjectId, ref: 'User' })
   userId?: Types.ObjectId;
 }
