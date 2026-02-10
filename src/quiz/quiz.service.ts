@@ -1,4 +1,4 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import { Injectable, NotFoundException, ForbiddenException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, Types } from 'mongoose';
 import {
@@ -6,6 +6,7 @@ import {
   QuizAttemptDocument,
 } from './schemas/quiz-attempt.schema';
 import { PersonalityTypesService } from '../personality-types/personality-types.service';
+import { UsersService } from '../users/users.service';
 import { SubmitQuizDto } from './dto/submit-quiz.dto';
 import * as uuid from 'uuid';
 import { JwtService } from '@nestjs/jwt';
@@ -17,6 +18,7 @@ export class QuizService {
     private quizAttemptModel: Model<QuizAttemptDocument>,
     private readonly personalityTypesService: PersonalityTypesService,
     private readonly jwtService: JwtService,
+    private readonly usersService: UsersService,
   ) {}
 
   async submit(dto: SubmitQuizDto, authHeader?: string) {
@@ -46,11 +48,32 @@ export class QuizService {
       const token = authHeader.substring(7);
       try {
         const payload = this.jwtService.verify(token) as { sub?: string };
-        if (payload && payload.sub)
-          attempt.userId = new Types.ObjectId(payload.sub);
-      } catch (e) {
-        if (e) {
+        if (payload && payload.sub) {
+          const userId = payload.sub;
+          attempt.userId = new Types.ObjectId(userId);
+
+          // Check Premium Limit
+          const user = await this.usersService.findById(userId);
+          if (user && !user.isPremium) {
+            const count = await this.quizAttemptModel.countDocuments({
+              userId: new Types.ObjectId(userId),
+            });
+            
+            // Allow only 1 free quiz
+            if (count >= 1) {
+              throw new ForbiddenException({
+                message: 'Has alcanzado el límite de quizzes gratuitos.',
+                code: 'LIMIT_REACHED',
+                details: 'Upgrade to Premium for unlimited quizzes.',
+              });
+            }
+          }
         }
+      } catch (e) {
+        if (e instanceof ForbiddenException) {
+          throw e;
+        }
+        // Ignore invalid tokens, proceed as guest
       }
     }
 
@@ -89,15 +112,21 @@ export class QuizService {
         this.personalityTypesService.findOne(attempt.money_type_id),
       ]);
 
+      const basicInfo = (type: any) => ({
+        id: type.id,
+        titulo: type.titulo,
+        descripcion: type.esencia,
+      });
+
       return {
         is_paid: true,
         result: {
-          dominant,
-          secondary,
-          shadow,
-          work,
-          social,
-          money,
+          dominant, // Full object
+          secondary: { ...basicInfo(secondary), trabajo: secondary.trabajoIdeal },
+          shadow: { ...basicInfo(shadow), enSombra: shadow.enSombra },
+          work: { ...basicInfo(work), trabajo: work.trabajoIdeal },
+          social: { ...basicInfo(social), social: social.social },
+          money: { ...basicInfo(money), dinero: money.dinero },
         },
       };
     } else {
@@ -134,8 +163,8 @@ export class QuizService {
     let score = 65; // Base score
     let label = 'Desafío de Crecimiento';
 
-    const aMatchesB = typeA.pareja.some((p) => p.includes(`T${typeB.id}`));
-    const bMatchesA = typeB.pareja.some((p) => p.includes(`T${typeA.id}`));
+    const aMatchesB = typeA.parejaPerfecta?.some((p) => p.includes(`T${typeB.id}`));
+    const bMatchesA = typeB.parejaPerfecta?.some((p) => p.includes(`T${typeA.id}`));
 
     if (aMatchesB && bMatchesA) {
       score = 95;
@@ -149,17 +178,20 @@ export class QuizService {
     }
 
     // Analysis generation
+    const strengthA = typeA.enLuz?.[0]?.split(',')[0] || 'Fortaleza';
+    const strengthB = typeB.enLuz?.[0]?.split(',')[0] || 'Fortaleza';
+    
     const analysis = {
       strengths: [
-        `Unión de ${typeA.lightBullets[0].split(',')[0]} y ${typeB.lightBullets[0].split(',')[0]}`,
-        typeA.lightBullets[1] || 'Visión compartida',
-        typeB.lightBullets[1] || 'Resiliencia mutua',
+        `Unión de ${strengthA} y ${strengthB}`,
+        typeA.enLuz?.[1] || 'Visión compartida',
+        typeB.enLuz?.[1] || 'Resiliencia mutua',
       ],
       challenges: [
-        `Riesgo de ${typeA.shadowBullets[0].split(',')[0]} frente a ${typeB.shadowBullets[0].split(',')[0]}`,
+        `Riesgo de ${typeA.enSombra?.[0]?.split(',')[0] || 'Sombra'} frente a ${typeB.enSombra?.[0]?.split(',')[0] || 'Sombra'}`,
         'Necesidad de equilibrar la energía',
       ],
-      advice: `${typeA.mantra} Recuerden: ${typeB.mantra}`,
+      advice: `${typeA.mantra || ''} Recuerden: ${typeB.mantra || ''}`,
     };
 
     return {
@@ -213,7 +245,6 @@ export class QuizService {
           score: 0, // Placeholder
           resultTypeId: attempt.calculated_type_id.toString(),
           resultTypeName: type ? type.name : 'Unknown',
-          imageUrl: type ? type.image_url : '',
           snippet: type ? type.description_preview : '',
           is_paid: !!attempt.is_paid,
           payment_id: attempt.payment_id || null,

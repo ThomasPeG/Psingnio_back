@@ -15,15 +15,19 @@ export class PersonalityTypesService implements OnModuleInit {
   ) {}
 
   async onModuleInit() {
-    console.log('Syncing Personality Types Seed...');
-    for (const type of PERSONALITY_TYPES_SEED) {
-      await this.personalityTypeModel.updateOne(
-        { id: type.id },
-        { $set: type },
-        { upsert: true },
-      );
-    }
-    console.log('Personality Types Synced');
+    // console.log('Syncing Personality Types Seed...');
+    // for (const type of PERSONALITY_TYPES_SEED) {
+    //   await this.personalityTypeModel.updateOne(
+    //     { id: type.id },
+    //     { 
+    //       $set: type,
+    //       $unset: { image_url: 1 } // Remove legacy field
+    //     },
+    //     { upsert: true },
+    //   );
+    // }
+    // console.log('Personality Types Synced');
+    console.log('Personality Types Sync SKIPPED (Manual Mode)');
   }
 
   async findAll(): Promise<PersonalityType[]> {

@@ -19,6 +19,14 @@ export class PaymentController {
     return this.paymentService.createIntent(dto.attemptId);
   }
 
+  @Post('create-premium-intent')
+  async createPremiumIntent(@Body('userId') userId: string) {
+    if (!userId) {
+      throw new BadRequestException('userId is required');
+    }
+    return this.paymentService.createPremiumIntent(userId);
+  }
+
   @Post('webhook')
   async webhook(
     @Headers('stripe-signature') signature: string,

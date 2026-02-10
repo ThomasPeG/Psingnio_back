@@ -67,6 +67,49 @@ export class PaymentService {
     }
   }
 
+  async createPremiumIntent(userId: string) {
+    const user = await this.usersService.findById(userId);
+    if (!user) {
+      throw new NotFoundException('User not found');
+    }
+
+    if (user.isPremium) {
+      throw new BadRequestException('User is already premium');
+    }
+
+    // Amount for premium subscription/upgrade
+    const amount =
+      this.configService.get<number>('STRIPE_PREMIUM_PRICE_AMOUNT') || 2999;
+    const currency = this.configService.get<string>('STRIPE_CURRENCY') || 'usd';
+
+    try {
+      const paymentIntent = await this.stripe.paymentIntents.create({
+        amount,
+        currency,
+        metadata: {
+          userId: userId,
+          type: 'premium_upgrade',
+        },
+        automatic_payment_methods: {
+          enabled: true,
+        },
+      });
+
+      return {
+        clientSecret: paymentIntent.client_secret,
+        publicKey: this.configService.get<string>('STRIPE_PUBLIC_KEY'),
+      };
+    } catch (error) {
+      this.logger.error(
+        `Error creating premium payment intent: ${error.message}`,
+        error.stack,
+      );
+      throw new InternalServerErrorException(
+        'Failed to create premium payment intent',
+      );
+    }
+  }
+
   async handleWebhook(signature: string, rawBody: Buffer) {
     const webhookSecret = this.configService.get<string>('STRIPE_WEBHOOK_SECRET');
     if (!webhookSecret) {
@@ -93,7 +136,47 @@ export class PaymentService {
         const paymentIntent = event.data.object as Stripe.PaymentIntent;
         await this.handlePaymentSuccess(paymentIntent);
         break;
-      // Add other event handlers as needed (e.g., payment_intent.payment_failed)
+
+      case 'payment_intent.payment_failed': {
+        const intent = event.data.object as Stripe.PaymentIntent;
+        const failureReason = intent.last_payment_error?.message || 'Unknown reason';
+        this.logger.warn(
+          `❌ Payment Failed: Attempt ${intent.metadata.attemptId} - Reason: ${failureReason}`,
+        );
+        break;
+      }
+
+      case 'payment_intent.processing': {
+        const intent = event.data.object as Stripe.PaymentIntent;
+        this.logger.log(
+          `⏳ Payment Processing: Attempt ${intent.metadata.attemptId} is pending bank approval.`,
+        );
+        break;
+      }
+
+      case 'charge.refunded': {
+        const charge = event.data.object as Stripe.Charge;
+        const paymentIntentId = charge.payment_intent as string;
+        this.logger.warn(
+          `💸 Payment Refunded: PaymentIntent ${paymentIntentId}. Consider revoking access.`,
+        );
+        // TODO: Implement logic to revoke access (markAsUnpaid) if business logic requires it
+        break;
+      }
+
+      case 'charge.dispute.created': {
+        const dispute = event.data.object as Stripe.Dispute;
+        const paymentIntentId =
+          typeof dispute.payment_intent === 'string'
+            ? dispute.payment_intent
+            : dispute.payment_intent?.id;
+        this.logger.error(
+          `🚨 DISPUTE CREATED! PaymentIntent: ${paymentIntentId}. Reason: ${dispute.reason}`,
+        );
+        // Critical: Alert admin or block user immediately
+        break;
+      }
+
       default:
         this.logger.log(`Unhandled event type ${event.type}`);
     }
@@ -102,18 +185,20 @@ export class PaymentService {
   }
 
   private async handlePaymentSuccess(paymentIntent: Stripe.PaymentIntent) {
-    const { attemptId, userId } = paymentIntent.metadata;
+    const { attemptId, userId, type } = paymentIntent.metadata;
 
     this.logger.log(`Payment succeeded for attempt ${attemptId} (User: ${userId})`);
 
-    if (attemptId) {
+    if (type === 'premium_upgrade' && userId) {
+      await this.usersService.markPremium(userId);
+      this.logger.log(`User ${userId} upgraded to PREMIUM.`);
+    } else if (attemptId) {
       await this.quizService.markAsPaid(attemptId, paymentIntent.id);
     }
 
-    if (userId && userId !== 'guest') {
-       // Optional: Mark user as premium if that's the business model
-       // Or simply rely on the attempt being paid
-       // await this.usersService.markPremium(userId);
+    // Legacy fallback: if no type but has attemptId (old intents)
+    if (!type && attemptId) {
+       await this.quizService.markAsPaid(attemptId, paymentIntent.id);
     }
   }
 
