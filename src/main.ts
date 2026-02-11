@@ -8,7 +8,7 @@ async function bootstrap() {
   });
 
   app.enableCors();
-  
+
   // Middleware to preserve raw body for specific routes
   // NestJS 'rawBody: true' handles this automatically, but we ensure it's available
   // No custom middleware needed if using the built-in option.

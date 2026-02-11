@@ -19,7 +19,9 @@ export class QuestionsService implements OnModuleInit {
       console.log('Questions Seeded/Updated');
       return;
     }
-    const missingDomain = await this.questionModel.exists({ domain: { $exists: false } });
+    const missingDomain = await this.questionModel.exists({
+      domain: { $exists: false },
+    });
     if (missingDomain) {
       console.log('Reseeding Questions with Psignio format...');
       await this.questionModel.deleteMany({});

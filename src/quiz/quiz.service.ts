@@ -1,4 +1,8 @@
-import { Injectable, NotFoundException, ForbiddenException } from '@nestjs/common';
+import {
+  Injectable,
+  NotFoundException,
+  ForbiddenException,
+} from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, Types } from 'mongoose';
 import {
@@ -47,7 +51,7 @@ export class QuizService {
     if (authHeader && authHeader.startsWith('Bearer ')) {
       const token = authHeader.substring(7);
       try {
-        const payload = this.jwtService.verify(token) as { sub?: string };
+        const payload = this.jwtService.verify(token);
         if (payload && payload.sub) {
           const userId = payload.sub;
           attempt.userId = new Types.ObjectId(userId);
@@ -58,7 +62,7 @@ export class QuizService {
             const count = await this.quizAttemptModel.countDocuments({
               userId: new Types.ObjectId(userId),
             });
-            
+
             // Allow only 1 free quiz
             if (count >= 1) {
               throw new ForbiddenException({
@@ -122,7 +126,10 @@ export class QuizService {
         is_paid: true,
         result: {
           dominant, // Full object
-          secondary: { ...basicInfo(secondary), trabajo: secondary.trabajoIdeal },
+          secondary: {
+            ...basicInfo(secondary),
+            trabajo: secondary.trabajoIdeal,
+          },
           shadow: { ...basicInfo(shadow), enSombra: shadow.enSombra },
           work: { ...basicInfo(work), trabajo: work.trabajoIdeal },
           social: { ...basicInfo(social), social: social.social },
@@ -163,8 +170,12 @@ export class QuizService {
     let score = 65; // Base score
     let label = 'Desafío de Crecimiento';
 
-    const aMatchesB = typeA.parejaPerfecta?.some((p) => p.includes(`T${typeB.id}`));
-    const bMatchesA = typeB.parejaPerfecta?.some((p) => p.includes(`T${typeA.id}`));
+    const aMatchesB = typeA.parejaPerfecta?.some((p) =>
+      p.includes(`T${typeB.id}`),
+    );
+    const bMatchesA = typeB.parejaPerfecta?.some((p) =>
+      p.includes(`T${typeA.id}`),
+    );
 
     if (aMatchesB && bMatchesA) {
       score = 95;
@@ -180,7 +191,7 @@ export class QuizService {
     // Analysis generation
     const strengthA = typeA.enLuz?.[0]?.split(',')[0] || 'Fortaleza';
     const strengthB = typeB.enLuz?.[0]?.split(',')[0] || 'Fortaleza';
-    
+
     const analysis = {
       strengths: [
         `Unión de ${strengthA} y ${strengthB}`,
@@ -255,9 +266,7 @@ export class QuizService {
     return history;
   }
 
-  private calculateResults(
-    answers: { questionId: number; value: number }[],
-  ): {
+  private calculateResults(answers: { questionId: number; value: number }[]): {
     dominantTypeId: number;
     secondaryTypeId: number;
     shadowTypeId: number;

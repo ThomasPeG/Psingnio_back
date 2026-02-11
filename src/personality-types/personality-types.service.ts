@@ -19,7 +19,7 @@ export class PersonalityTypesService implements OnModuleInit {
     // for (const type of PERSONALITY_TYPES_SEED) {
     //   await this.personalityTypeModel.updateOne(
     //     { id: type.id },
-    //     { 
+    //     {
     //       $set: type,
     //       $unset: { image_url: 1 } // Remove legacy field
     //     },

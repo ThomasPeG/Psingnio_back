@@ -76,13 +76,13 @@ export class PersonalityType {
     salidaALuz: string;
   };
 
-  // Deprecated fields kept optional for backward compatibility if needed, 
+  // Deprecated fields kept optional for backward compatibility if needed,
   // though we are replacing data, so they might be empty.
   // We can remove them if we are sure the frontend is updated or if we want to force the update.
   // Given the user said "guarda esa informacion tal cual", we focus on the new fields.
   // We'll leave the old ones out to keep the schema clean.
   // BUT: existing code (quiz.service) might rely on `name`, `description_preview`.
-  // I should check if I need to map `titulo` -> `name` and `esencia` -> `description_preview` 
+  // I should check if I need to map `titulo` -> `name` and `esencia` -> `description_preview`
   // or update the QuizService/Frontend.
   // The user said "guarda esa informacion tal cual".
   // If I change field names, the Frontend WILL break.
@@ -90,7 +90,7 @@ export class PersonalityType {
   // OR, I assume the user knows the frontend needs update.
   // "Prompt para Frontend" was generated in previous turn.
   // I should PROBABLY add `name` and `description_preview` as duplicates/aliases to avoid breaking everything immediately.
-  
+
   @Prop()
   name: string; // Mapped from titulo
 

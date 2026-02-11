@@ -15,7 +15,9 @@ export class AuthService {
   ) {
     const clientId = this.configService.get<string>('GOOGLE_CLIENT_ID');
     if (!clientId) {
-      console.warn('⚠️ GOOGLE_CLIENT_ID is not defined. Google Login will fail.');
+      console.warn(
+        '⚠️ GOOGLE_CLIENT_ID is not defined. Google Login will fail.',
+      );
     }
     this.googleClient = new OAuth2Client(clientId);
   }
@@ -56,12 +58,9 @@ export class AuthService {
 
   async googleWebLogin(accessToken: string) {
     try {
-      const res = await fetch(
-        'https://www.googleapis.com/oauth2/v3/userinfo',
-        {
-          headers: { Authorization: `Bearer ${accessToken}` },
-        },
-      );
+      const res = await fetch('https://www.googleapis.com/oauth2/v3/userinfo', {
+        headers: { Authorization: `Bearer ${accessToken}` },
+      });
       if (!res.ok) {
         throw new BadRequestException('Invalid access token');
       }

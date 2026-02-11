@@ -40,9 +40,11 @@ export class PaymentController {
     // For Stripe webhooks, we need the raw buffer.
     // We assume that the RawBodyMiddleware (to be implemented) attaches 'rawBody' to the request.
     const rawBody = (request as any).rawBody;
-    
+
     if (!rawBody) {
-       throw new BadRequestException('Raw body not available. Ensure middleware is configured.');
+      throw new BadRequestException(
+        'Raw body not available. Ensure middleware is configured.',
+      );
     }
 
     return this.paymentService.handleWebhook(signature, rawBody);

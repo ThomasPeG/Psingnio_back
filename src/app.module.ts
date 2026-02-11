@@ -12,6 +12,7 @@ import { QuizModule } from './quiz/quiz.module';
 import { PaymentModule } from './payment/payment.module';
 import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
+import { CompatibilitiesModule } from './compatibilities/compatibilities.module';
 
 @Module({
   imports: [
@@ -37,6 +38,7 @@ import { AuthModule } from './auth/auth.module';
     PaymentModule,
     UsersModule,
     AuthModule,
+    CompatibilitiesModule,
   ],
   controllers: [AppController],
   providers: [

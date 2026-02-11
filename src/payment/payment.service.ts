@@ -22,7 +22,9 @@ export class PaymentService {
   ) {
     const apiKey = this.configService.get<string>('STRIPE_SECRET_KEY');
     if (!apiKey) {
-      this.logger.error('STRIPE_SECRET_KEY is not defined in environment variables');
+      this.logger.error(
+        'STRIPE_SECRET_KEY is not defined in environment variables',
+      );
     }
     this.stripe = new Stripe(apiKey || '', {
       apiVersion: '2025-01-27.acacia', // Latest API version
@@ -39,7 +41,7 @@ export class PaymentService {
       throw new BadRequestException('This attempt is already paid');
     }
 
-    // Amount should be configured in env or database. 
+    // Amount should be configured in env or database.
     // Example: $9.99 = 999 cents
     const amount = this.configService.get<number>('STRIPE_PRICE_AMOUNT') || 999;
     const currency = this.configService.get<string>('STRIPE_CURRENCY') || 'usd';
@@ -62,7 +64,10 @@ export class PaymentService {
         publicKey: this.configService.get<string>('STRIPE_PUBLIC_KEY'),
       };
     } catch (error) {
-      this.logger.error(`Error creating payment intent: ${error.message}`, error.stack);
+      this.logger.error(
+        `Error creating payment intent: ${error.message}`,
+        error.stack,
+      );
       throw new InternalServerErrorException('Failed to create payment intent');
     }
   }
@@ -111,7 +116,9 @@ export class PaymentService {
   }
 
   async handleWebhook(signature: string, rawBody: Buffer) {
-    const webhookSecret = this.configService.get<string>('STRIPE_WEBHOOK_SECRET');
+    const webhookSecret = this.configService.get<string>(
+      'STRIPE_WEBHOOK_SECRET',
+    );
     if (!webhookSecret) {
       this.logger.error('STRIPE_WEBHOOK_SECRET is not defined');
       throw new InternalServerErrorException('Stripe configuration error');
@@ -126,20 +133,23 @@ export class PaymentService {
         webhookSecret,
       );
     } catch (err) {
-      this.logger.error(`Webhook signature verification failed: ${err.message}`);
+      this.logger.error(
+        `Webhook signature verification failed: ${err.message}`,
+      );
       throw new BadRequestException(`Webhook Error: ${err.message}`);
     }
 
     // Handle specific event types
     switch (event.type) {
       case 'payment_intent.succeeded':
-        const paymentIntent = event.data.object as Stripe.PaymentIntent;
+        const paymentIntent = event.data.object;
         await this.handlePaymentSuccess(paymentIntent);
         break;
 
       case 'payment_intent.payment_failed': {
-        const intent = event.data.object as Stripe.PaymentIntent;
-        const failureReason = intent.last_payment_error?.message || 'Unknown reason';
+        const intent = event.data.object;
+        const failureReason =
+          intent.last_payment_error?.message || 'Unknown reason';
         this.logger.warn(
           `❌ Payment Failed: Attempt ${intent.metadata.attemptId} - Reason: ${failureReason}`,
         );
@@ -147,7 +157,7 @@ export class PaymentService {
       }
 
       case 'payment_intent.processing': {
-        const intent = event.data.object as Stripe.PaymentIntent;
+        const intent = event.data.object;
         this.logger.log(
           `⏳ Payment Processing: Attempt ${intent.metadata.attemptId} is pending bank approval.`,
         );
@@ -155,7 +165,7 @@ export class PaymentService {
       }
 
       case 'charge.refunded': {
-        const charge = event.data.object as Stripe.Charge;
+        const charge = event.data.object;
         const paymentIntentId = charge.payment_intent as string;
         this.logger.warn(
           `💸 Payment Refunded: PaymentIntent ${paymentIntentId}. Consider revoking access.`,
@@ -165,7 +175,7 @@ export class PaymentService {
       }
 
       case 'charge.dispute.created': {
-        const dispute = event.data.object as Stripe.Dispute;
+        const dispute = event.data.object;
         const paymentIntentId =
           typeof dispute.payment_intent === 'string'
             ? dispute.payment_intent
@@ -187,7 +197,9 @@ export class PaymentService {
   private async handlePaymentSuccess(paymentIntent: Stripe.PaymentIntent) {
     const { attemptId, userId, type } = paymentIntent.metadata;
 
-    this.logger.log(`Payment succeeded for attempt ${attemptId} (User: ${userId})`);
+    this.logger.log(
+      `Payment succeeded for attempt ${attemptId} (User: ${userId})`,
+    );
 
     if (type === 'premium_upgrade' && userId) {
       await this.usersService.markPremium(userId);
@@ -198,22 +210,25 @@ export class PaymentService {
 
     // Legacy fallback: if no type but has attemptId (old intents)
     if (!type && attemptId) {
-       await this.quizService.markAsPaid(attemptId, paymentIntent.id);
+      await this.quizService.markAsPaid(attemptId, paymentIntent.id);
     }
   }
 
   async syncPayment(paymentIntentId: string) {
     try {
-      const paymentIntent = await this.stripe.paymentIntents.retrieve(paymentIntentId);
-      
+      const paymentIntent =
+        await this.stripe.paymentIntents.retrieve(paymentIntentId);
+
       if (paymentIntent.status === 'succeeded') {
         await this.handlePaymentSuccess(paymentIntent);
         return { status: 'succeeded', paid: true };
       }
-      
+
       return { status: paymentIntent.status, paid: false };
     } catch (error) {
-      this.logger.error(`Error syncing payment ${paymentIntentId}: ${error.message}`);
+      this.logger.error(
+        `Error syncing payment ${paymentIntentId}: ${error.message}`,
+      );
       throw new BadRequestException('Could not verify payment status');
     }
   }

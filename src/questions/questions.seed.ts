@@ -10,7 +10,10 @@ export const QUESTIONS_SEED = [
       { value: 4, label: 'Tomar control del día y decidir.' },
       { value: 5, label: 'Imaginar posibilidades y crear algo nuevo.' },
       { value: 6, label: 'Ordenar, estructurar y hacer bien lo esencial.' },
-      { value: 7, label: 'Observar señales, transformar el día “desde adentro”.' },
+      {
+        value: 7,
+        label: 'Observar señales, transformar el día “desde adentro”.',
+      },
     ],
   },
   {

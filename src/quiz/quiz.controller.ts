@@ -1,4 +1,13 @@
-import { Controller, Post, Body, Get, Param, Req, UseGuards, Query } from '@nestjs/common';
+import {
+  Controller,
+  Post,
+  Body,
+  Get,
+  Param,
+  Req,
+  UseGuards,
+  Query,
+} from '@nestjs/common';
 import type { Request } from 'express';
 import { QuizService } from './quiz.service';
 import { SubmitQuizDto } from './dto/submit-quiz.dto';
@@ -18,7 +27,7 @@ export class QuizController {
 
   @Post('submit')
   async submit(@Body() dto: SubmitQuizDto, @Req() req: Request) {
-    const auth = req.headers['authorization'] as string | undefined
+    const auth = req.headers['authorization'];
     return this.quizService.submit(dto, auth);
   }
 

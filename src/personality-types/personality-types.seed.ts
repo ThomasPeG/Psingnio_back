@@ -115,7 +115,7 @@ export const PERSONALITY_TYPES_SEED = [
     dinero: {
       talento: 'generas estabilidad por relaciones y confianza.',
       riesgo: 'dar de más / gastar por emoción o culpa.',
-      reglaDeOro: "Yo también soy parte de mis ‘tuyos’.",
+      reglaDeOro: 'Yo también soy parte de mis ‘tuyos’.',
       ganaDinero: 'relaciones, servicio, comunidad, atención humana',
       bloqueo: 'regalar su valor, miedo a cobrar',
       mejorAliado: '👑 T4 (valor propio) o 🜃 T3 (límites)',
@@ -268,7 +268,8 @@ export const PERSONALITY_TYPES_SEED = [
       limiteSano: 'liderar no es aplastar; es elevar.',
     },
     dinero: {
-      talento: 'construir activos, escalar negocios, tomar control del cashflow.',
+      talento:
+        'construir activos, escalar negocios, tomar control del cashflow.',
       riesgo: 'apuestas por ego / querer ganar siempre.',
       reglaDeOro: 'Poder sin paz es prisión.',
       ganaDinero: 'liderazgo, dirección, marca personal',
@@ -341,8 +342,7 @@ export const PERSONALITY_TYPES_SEED = [
       evita: 'rutina rígida, micromanagement, ambientes que apagan ideas.',
     },
     social: {
-      descripcion:
-        'Tú “inspiras” el grupo: ideas, humor, chispa, perspectiva.',
+      descripcion: 'Tú “inspiras” el grupo: ideas, humor, chispa, perspectiva.',
       limiteSano: 'no confundas libertad con falta de estructura.',
     },
     dinero: {
@@ -419,7 +419,8 @@ export const PERSONALITY_TYPES_SEED = [
       evita: 'caos constante, “todo urgente”, decisiones improvisadas.',
     },
     social: {
-      descripcion: 'Tú “organizas” el grupo: logística, soluciones, estructura.',
+      descripcion:
+        'Tú “organizas” el grupo: logística, soluciones, estructura.',
       limiteSano: 'tu valor no depende de hacerlo todo perfecto.',
     },
     dinero: {
