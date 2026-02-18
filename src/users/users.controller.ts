@@ -4,6 +4,9 @@ import {
   Req,
   UseGuards,
   NotFoundException,
+  Delete,
+  HttpCode,
+  HttpStatus,
 } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
@@ -35,5 +38,13 @@ export class UsersController {
       },
       history,
     };
+  }
+
+  @UseGuards(JwtAuthGuard)
+  @Delete('me')
+  @HttpCode(HttpStatus.NO_CONTENT)
+  async deleteUser(@Req() req: Request & { user: { sub: string } }) {
+    console.log('Delete user request received for user:', req.user.sub);
+    await this.usersService.deleteUserAndData(req.user.sub);
   }
 }

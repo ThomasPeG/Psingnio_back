@@ -4,13 +4,27 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { Model } from 'mongoose';
+import { Model, Types } from 'mongoose';
 import { User, UserDocument } from './schemas/user.schema';
 import * as bcrypt from 'bcryptjs';
+import {
+  QuizAttempt,
+  QuizAttemptDocument,
+} from '../quiz/schemas/quiz-attempt.schema';
+import {
+  ArchivedPayment,
+  ArchivedPaymentDocument,
+} from '../archive/schemas/archived-payment.schema';
 
 @Injectable()
 export class UsersService {
-  constructor(@InjectModel(User.name) private userModel: Model<UserDocument>) {}
+  constructor(
+    @InjectModel(User.name) private userModel: Model<UserDocument>,
+    @InjectModel(QuizAttempt.name)
+    private quizAttemptModel: Model<QuizAttemptDocument>,
+    @InjectModel(ArchivedPayment.name)
+    private archivedPaymentModel: Model<ArchivedPaymentDocument>,
+  ) {}
 
   async createWithPassword(email: string, password: string, name?: string) {
     const existing = await this.userModel.findOne({ email }).exec();
@@ -59,5 +73,36 @@ export class UsersService {
     user.isPremium = true;
     await user.save();
     return user;
+  }
+
+  async deleteUserAndData(userId: string): Promise<void> {
+    console.log('userId', userId);
+    const objectUserId = new Types.ObjectId(userId);
+
+    // 1. Find all quiz attempts for the user
+    const attempts = await this.quizAttemptModel.find({ userId: objectUserId });
+
+    // 2. Filter for paid attempts and archive them
+    const paidAttempts = attempts.filter(
+      (attempt) => attempt.is_paid && attempt.payment_id,
+    );
+
+    if (paidAttempts.length > 0) {
+      const archives = paidAttempts.map((attempt) => ({
+        paymentId: attempt.payment_id,
+        originalUserId: objectUserId,
+      }));
+      await this.archivedPaymentModel.insertMany(archives);
+    }
+
+    // 3. Delete all quiz attempts for the user (paid and unpaid)
+    await this.quizAttemptModel.deleteMany({ userId: objectUserId });
+
+    // 4. Delete the user
+    const result = await this.userModel.deleteOne({ _id: objectUserId });
+
+    if (result.deletedCount === 0) {
+      throw new NotFoundException('User not found');
+    }
   }
 }
