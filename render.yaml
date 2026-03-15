@@ -1,0 +1,32 @@
+# Blueprint for deploying two services from one monorepo on Render.
+
+services:
+  # Service 1: NestJS Backend
+  - type: web
+    name: nest-backend
+    env: node
+    # The root of the NestJS app is the root of this 'back' directory
+    rootDir: . 
+    buildCommand: "npm install && npm run build"
+    startCommand: "npm run start:prod"
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # Add other environment variables for NestJS here
+      # e.g., MONGO_URI, JWT_SECRET, etc.
+      - key: DATABASE_URL
+        fromDatabase:
+          name: your-db-name # Replace with your Render DB name if you have one
+          property: connectionString
+
+  # Service 2: Python (Flask) API
+  - type: web
+    name: python-api
+    env: python
+    # The root of the Python app is the python directory
+    rootDir: ./python 
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn main:app"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.4 # Specify your Python version

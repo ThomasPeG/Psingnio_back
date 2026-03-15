@@ -1,0 +1,3000 @@
+[{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fb6e"
+  },
+  "id": 1,
+  "text": "Cuando despiertas, tu impulso natural es…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Irme directo a la acción.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb6f"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Conectar con alguien / sentir el clima emocional.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb70"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Revisar plan, prioridades y ruta.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb71"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Tomar control del día y decidir.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb72"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Imaginar posibilidades y crear algo nuevo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb73"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Ordenar, estructurar y hacer bien lo esencial.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb74"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Observar señales, transformar el día “desde adentro”.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb75"
+      }
+    }
+  ],
+  "domain": "identity",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fb76"
+  },
+  "id": 2,
+  "text": "Lo que más te mueve por dentro es…",
+  "options": [
+    {
+      "value": 1,
+      "label": "La intensidad / reto.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb77"
+      }
+    },
+    {
+      "value": 2,
+      "label": "La unión / amor / pertenencia.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb78"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Ganar ventaja con inteligencia.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb79"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Poder construir y liderar.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb7a"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Visión, propósito, futuro.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb7b"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Estabilidad, precisión, progreso real.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb7c"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Misterio, cambio, evolución.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb7d"
+      }
+    }
+  ],
+  "domain": "identity",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fb7e"
+  },
+  "id": 3,
+  "text": "Cuando tienes una idea, tú…",
+  "options": [
+    {
+      "value": 1,
+      "label": "La pruebas ya.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb7f"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Se la compartes a alguien que confías.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb80"
+      }
+    },
+    {
+      "value": 3,
+      "label": "La conviertes en estrategia.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb81"
+      }
+    },
+    {
+      "value": 4,
+      "label": "La vuelves decisión.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb82"
+      }
+    },
+    {
+      "value": 5,
+      "label": "La expandes a 10 ideas más.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb83"
+      }
+    },
+    {
+      "value": 6,
+      "label": "La aterrizas con pasos y sistema.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb84"
+      }
+    },
+    {
+      "value": 7,
+      "label": "La sientes y la transformas hasta que “encaje”.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb85"
+      }
+    }
+  ],
+  "domain": "identity",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fb86"
+  },
+  "id": 4,
+  "text": "Tu mayor fortaleza suele ser…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Valentía y empuje.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb87"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Empatía y vínculo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb88"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Claridad mental y cálculo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb89"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Presencia y autoridad.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb8a"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Creatividad y visión.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb8b"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Disciplina y ejecución.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb8c"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Intuición y transmutación.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb8d"
+      }
+    }
+  ],
+  "domain": "identity",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fb8e"
+  },
+  "id": 5,
+  "text": "Tu defecto típico (cuando no te regulas) es…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Impulsivo / me quemo rápido.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb8f"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Me pierdo por complacer.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb90"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Frío / me aíslo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb91"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Controlador / duro.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb92"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Disperso / idealista.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb93"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Rígido / exigente.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb94"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Intenso / enigmático.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb95"
+      }
+    }
+  ],
+  "domain": "identity",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fb96"
+  },
+  "id": 6,
+  "text": "Cuando la vida aprieta, tú sueles…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Atacar el problema de frente.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb97"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Buscar apoyo o reconciliación.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb98"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Pensar más y sentir menos.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb99"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Poner reglas y cortar.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb9a"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Escapar a la mente / soñar salida.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb9b"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Volverme más metódico y tenso.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb9c"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Volverme hermético y profundo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb9d"
+      }
+    }
+  ],
+  "domain": "identity",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fb9e"
+  },
+  "id": 7,
+  "text": "Te sientes más vivo cuando…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Hay adrenalina y avance.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fb9f"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Hay amor y sinceridad.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fba0"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Hay reto intelectual.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fba1"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Hay impacto y liderazgo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fba2"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Hay creación y libertad.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fba3"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Hay orden y mejora.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fba4"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Hay significado y transformación.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fba5"
+      }
+    }
+  ],
+  "domain": "identity",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fba6"
+  },
+  "id": 8,
+  "text": "Tu manera de aprender es…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Haciendo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fba7"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Conversando y sintiendo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fba8"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Investigando y comparando.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fba9"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Practicando con exigencia.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbaa"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Con imágenes, metáforas, ideas.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbab"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Con método y repetición.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbac"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Con experiencia interna / intuición.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbad"
+      }
+    }
+  ],
+  "domain": "identity",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fbae"
+  },
+  "id": 9,
+  "text": "Si te describen en una frase, sería…",
+  "options": [
+    {
+      "value": 1,
+      "label": "“Va por todo.”",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbaf"
+      }
+    },
+    {
+      "value": 2,
+      "label": "“Sostiene a los suyos.”",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbb0"
+      }
+    },
+    {
+      "value": 3,
+      "label": "“Siempre ve el tablero.”",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbb1"
+      }
+    },
+    {
+      "value": 4,
+      "label": "“Nació para mandar.”",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbb2"
+      }
+    },
+    {
+      "value": 5,
+      "label": "“Piensa diferente.”",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbb3"
+      }
+    },
+    {
+      "value": 6,
+      "label": "“Lo hace bien y a tiempo.”",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbb4"
+      }
+    },
+    {
+      "value": 7,
+      "label": "“Tiene algo magnético.”",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbb5"
+      }
+    }
+  ],
+  "domain": "identity",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fbb6"
+  },
+  "id": 10,
+  "text": "Tu “combustible” principal es…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Desafío.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbb7"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Afecto.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbb8"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Información.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbb9"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Control/resultado.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbba"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Inspiración.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbbb"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Proceso.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbbc"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Transformación.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbbd"
+      }
+    }
+  ],
+  "domain": "identity",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fbbe"
+  },
+  "id": 11,
+  "text": "En conversación, tú tiendes a…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Ir al grano y provocar acción.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbbf"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Escuchar y armonizar.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbc0"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Hacer preguntas y analizar.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbc1"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Marcar postura con firmeza.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbc2"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Contar ideas y posibilidades.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbc3"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Ordenar el tema y concretar.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbc4"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Leer entre líneas y profundizar.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbc5"
+      }
+    }
+  ],
+  "domain": "communication",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fbc6"
+  },
+  "id": 12,
+  "text": "Cuando te critican, tu primera reacción es…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Defenderme / competir.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbc7"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Me duele, quiero reparar.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbc8"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Me distancio y evalúo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbc9"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Me pongo más firme.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbca"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Lo relativizo / me voy a la visión.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbcb"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Me autoexijo más.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbcc"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Me cierro / me transformo en silencio.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbcd"
+      }
+    }
+  ],
+  "domain": "communication",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fbce"
+  },
+  "id": 13,
+  "text": "Tu forma de decidir es…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Rápida.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbcf"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Considerando cómo afecta a todos.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbd0"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Comparando escenarios.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbd1"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Ejecutiva y definitiva.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbd2"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Intuitiva y creativa.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbd3"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Lógica, paso a paso.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbd4"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Energética: “se siente correcto o no”.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbd5"
+      }
+    }
+  ],
+  "domain": "communication",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fbd6"
+  },
+  "id": 14,
+  "text": "Cuando hay conflicto, tú…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Enfrentas.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbd7"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Buscas paz.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbd8"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Negocias con estrategia.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbd9"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Dominas o cortas.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbda"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Lo reencuadras con visión.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbdb"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Pides reglas claras.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbdc"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Vas a la raíz emocional/espiritual.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbdd"
+      }
+    }
+  ],
+  "domain": "communication",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fbde"
+  },
+  "id": 15,
+  "text": "Tu estilo de liderazgo es…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Por ejemplo y empuje.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbdf"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Por cuidado y cultura.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbe0"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Por dirección inteligente.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbe1"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Por autoridad y estándares.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbe2"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Por inspiración.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbe3"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Por procesos.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbe4"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Por propósito y transformación.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbe5"
+      }
+    }
+  ],
+  "domain": "communication",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fbe6"
+  },
+  "id": 16,
+  "text": "Cuando alguien te gusta, tú…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Avanzas directo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbe7"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Creas vínculo y seguridad.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbe8"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Observas y calculas señales.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbe9"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Tomas iniciativa y “marcas territorio”.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbea"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Fantaseas y conectas por mente/arte.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbeb"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Demuestras con hechos constantes.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbec"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Conectas a nivel profundo/energético.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbed"
+      }
+    }
+  ],
+  "domain": "communication",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fbee"
+  },
+  "id": 17,
+  "text": "Cuando alguien te falla, tú…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Me enojo y sigo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbef"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Me afecta y quiero hablar.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbf0"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Tomo nota y ajusto límites.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbf1"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Corto o impongo consecuencias.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbf2"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Me decepciono y me voy a mi mundo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbf3"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Pierdo confianza lentamente.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbf4"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Me cierro y transformo el vínculo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbf5"
+      }
+    }
+  ],
+  "domain": "communication",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fbf6"
+  },
+  "id": 18,
+  "text": "Tu verdad sale más como…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Intensidad.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbf7"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Emoción.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbf8"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Argumento.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbf9"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Orden.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbfa"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Idea.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbfb"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Hecho.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbfc"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Intuición.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbfd"
+      }
+    }
+  ],
+  "domain": "communication",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fbfe"
+  },
+  "id": 19,
+  "text": "Tu debilidad social típica es…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Impaciencia.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fbff"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Apego.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc00"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Distancia.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc01"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Dominancia.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc02"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Dispersión.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc03"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Rigidez.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc04"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Misterio/exceso de profundidad.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc05"
+      }
+    }
+  ],
+  "domain": "communication",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fc06"
+  },
+  "id": 20,
+  "text": "Tu manera de influir es…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Por energía.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc07"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Por cariño.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc08"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Por lógica.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc09"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Por autoridad.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc0a"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Por visión.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc0b"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Por consistencia.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc0c"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Por magnetismo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc0d"
+      }
+    }
+  ],
+  "domain": "communication",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fc0e"
+  },
+  "id": 21,
+  "text": "En un equipo, tu rol natural es…",
+  "options": [
+    {
+      "value": 1,
+      "label": "El que empuja.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc0f"
+      }
+    },
+    {
+      "value": 2,
+      "label": "El que une.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc10"
+      }
+    },
+    {
+      "value": 3,
+      "label": "El que planifica.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc11"
+      }
+    },
+    {
+      "value": 4,
+      "label": "El que manda.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc12"
+      }
+    },
+    {
+      "value": 5,
+      "label": "El que crea.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc13"
+      }
+    },
+    {
+      "value": 6,
+      "label": "El que ejecuta perfecto.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc14"
+      }
+    },
+    {
+      "value": 7,
+      "label": "El que transforma el ambiente.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc15"
+      }
+    }
+  ],
+  "domain": "work",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fc16"
+  },
+  "id": 22,
+  "text": "Te frustra más en un trabajo…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Lentitud.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc17"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Frialdad humana.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc18"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Caos sin estrategia.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc19"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Falta de autoridad.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc1a"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Rutina sin creatividad.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc1b"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Desorden e improvisación.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc1c"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Falta de propósito.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc1d"
+      }
+    }
+  ],
+  "domain": "work",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fc1e"
+  },
+  "id": 23,
+  "text": "Si te dan libertad total, tú…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Te lanzas a conquistar metas.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc1f"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Construyes comunidad/clientes fieles.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc20"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Diseñas sistemas para ganar.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc21"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Creas un imperio/operación.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc22"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Innovas y exploras.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc23"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Optimizarías procesos y calidad.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc24"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Harías algo con significado profundo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc25"
+      }
+    }
+  ],
+  "domain": "work",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fc26"
+  },
+  "id": 24,
+  "text": "Tu mejor ambiente laboral es…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Reto + velocidad.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc27"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Calidez + colaboración.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc28"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Métricas + estrategia.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc29"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Jerarquía + decisiones claras.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc2a"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Creativo + flexible.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc2b"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Ordenado + estable.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc2c"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Intenso + con propósito.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc2d"
+      }
+    }
+  ],
+  "domain": "work",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fc2e"
+  },
+  "id": 25,
+  "text": "Cuando hay presión, tú rindes mejor si…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Hay competencia.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc2f"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Hay apoyo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc30"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Hay claridad de plan.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc31"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Hay control y mando.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc32"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Hay visión inspiradora.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc33"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Hay checklist y método.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc34"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Hay sentido y silencio.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc35"
+      }
+    }
+  ],
+  "domain": "work",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fc36"
+  },
+  "id": 26,
+  "text": "Tu talento “premium” en negocio es…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Vender/atreverte/ejecutar.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc37"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Retener, fidelizar, servicio.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc38"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Estrategia, pricing, negociación.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc39"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Liderar, cerrar, dirigir.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc3a"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Branding, ideas, contenido.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc3b"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Operaciones, producto, calidad.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc3c"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Cultura, transformación, insight.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc3d"
+      }
+    }
+  ],
+  "domain": "work",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fc3e"
+  },
+  "id": 27,
+  "text": "Tú prefieres proyectos que…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Se ganan rápido.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc3f"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Ayudan gente.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc40"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Se pueden medir.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc41"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Escalan poder.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc42"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Cambian el juego.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc43"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Se construyen sólido.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc44"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Evolucionan conciencia.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc45"
+      }
+    }
+  ],
+  "domain": "work",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fc46"
+  },
+  "id": 28,
+  "text": "En un error, tú…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Corriges en caliente y sigues.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc47"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Pides perdón y reparas.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc48"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Analizas causa raíz.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc49"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Pones consecuencias.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc4a"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Lo conviertes en aprendizaje creativo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc4b"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Ajustas proceso para que no pase.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc4c"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Buscas el mensaje oculto.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc4d"
+      }
+    }
+  ],
+  "domain": "work",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fc4e"
+  },
+  "id": 29,
+  "text": "Un jefe ideal para ti es…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Directo y retador.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc4f"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Humano y presente.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc50"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Inteligente y justo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc51"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Fuerte y claro.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc52"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Visionario y libre.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc53"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Ordenado y consistente.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc54"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Profundo e inspirador.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc55"
+      }
+    }
+  ],
+  "domain": "work",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fc56"
+  },
+  "id": 30,
+  "text": "Tu camino ideal de carrera es…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Emprender/ventas/acción.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc57"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Personas/bienestar/servicio.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc58"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Consultoría/estrategia/finanzas.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc59"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Dirección/management/negocio.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc5a"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Creativo/innovación/medios.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc5b"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Ingeniería/ops/producto/sistemas.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc5c"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Psicología/coaching/arte profundo/transformación.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc5d"
+      }
+    }
+  ],
+  "domain": "work",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fc5e"
+  },
+  "id": 31,
+  "text": "En un grupo, tú eres…",
+  "options": [
+    {
+      "value": 1,
+      "label": "El que prende la energía.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc5f"
+      }
+    },
+    {
+      "value": 2,
+      "label": "El que cuida a todos.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc60"
+      }
+    },
+    {
+      "value": 3,
+      "label": "El que observa el tablero social.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc61"
+      }
+    },
+    {
+      "value": 4,
+      "label": "El que marca el ritmo/reglas.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc62"
+      }
+    },
+    {
+      "value": 5,
+      "label": "El que trae ideas y humor raro.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc63"
+      }
+    },
+    {
+      "value": 6,
+      "label": "El que organiza y resuelve.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc64"
+      }
+    },
+    {
+      "value": 7,
+      "label": "El que conecta profundo con pocos.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc65"
+      }
+    }
+  ],
+  "domain": "social",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fc66"
+  },
+  "id": 32,
+  "text": "Tu forma de hacer amigos es…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Por aventura.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc67"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Por confianza.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc68"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Por intereses mentales.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc69"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Por respeto.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc6a"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Por creatividad.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc6b"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Por constancia.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc6c"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Por intimidad emocional.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc6d"
+      }
+    }
+  ],
+  "domain": "social",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fc6e"
+  },
+  "id": 33,
+  "text": "Te drena socialmente cuando…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Todo es lento.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc6f"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Hay frialdad.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc70"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Hay superficialidad.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc71"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Nadie decide.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc72"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Hay rutina.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc73"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Hay caos.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc74"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Hay falsedad.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc75"
+      }
+    }
+  ],
+  "domain": "social",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fc76"
+  },
+  "id": 34,
+  "text": "En fiestas, tú…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Te mueves y activas.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc77"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Conectas 1 a 1 con cariño.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc78"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Hablas con pocos pero bien.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc79"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Dominas el espacio o te vas.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc7a"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Te vuelves creativo/performer.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc7b"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Aseguras que todo funcione.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc7c"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Te vas a conversaciones profundas.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc7d"
+      }
+    }
+  ],
+  "domain": "social",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fc7e"
+  },
+  "id": 35,
+  "text": "Tu límite social sano es…",
+  "options": [
+    {
+      "value": 1,
+      "label": "No aguanto drama.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc7f"
+      }
+    },
+    {
+      "value": 2,
+      "label": "No aguanto falta de afecto.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc80"
+      }
+    },
+    {
+      "value": 3,
+      "label": "No aguanto irracionalidad.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc81"
+      }
+    },
+    {
+      "value": 4,
+      "label": "No aguanto falta de respeto.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc82"
+      }
+    },
+    {
+      "value": 5,
+      "label": "No aguanto encierro creativo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc83"
+      }
+    },
+    {
+      "value": 6,
+      "label": "No aguanto improvisación eterna.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc84"
+      }
+    },
+    {
+      "value": 7,
+      "label": "No aguanto mentira.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc85"
+      }
+    }
+  ],
+  "domain": "social",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fc86"
+  },
+  "id": 36,
+  "text": "Para ti el dinero es…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Libertad para moverte.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc87"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Seguridad para los tuyos.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc88"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Herramienta para estrategia.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc89"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Poder para construir.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc8a"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Combustible para crear.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc8b"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Estabilidad y orden.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc8c"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Energía que amplifica propósito.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc8d"
+      }
+    }
+  ],
+  "domain": "money",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fc8e"
+  },
+  "id": 37,
+  "text": "Tu estilo de gasto es…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Rápido: experiencias/acción.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc8f"
+      }
+    },
+    {
+      "value": 2,
+      "label": "En regalos/afecto/hogar.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc90"
+      }
+    },
+    {
+      "value": 3,
+      "label": "En herramientas/educación.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc91"
+      }
+    },
+    {
+      "value": 4,
+      "label": "En status/crecimiento.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc92"
+      }
+    },
+    {
+      "value": 5,
+      "label": "En arte/ideas/viajes.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc93"
+      }
+    },
+    {
+      "value": 6,
+      "label": "En calidad/ahorro.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc94"
+      }
+    },
+    {
+      "value": 7,
+      "label": "En experiencias transformadoras.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc95"
+      }
+    }
+  ],
+  "domain": "money",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fc96"
+  },
+  "id": 38,
+  "text": "Tu riesgo financiero típico es…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Impulsividad.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc97"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Dar de más.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc98"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Sobre-analizar y perder timing.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc99"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Exceso de control/apuesta grande.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc9a"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Dispersión.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc9b"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Miedo a mover capital.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc9c"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Misterio: decisiones por intuición sin datos.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc9d"
+      }
+    }
+  ],
+  "domain": "money",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fc9e"
+  },
+  "id": 39,
+  "text": "Tu mejor estrategia de dinero sería…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Metas cortas + acción constante.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fc9f"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Presupuesto emocional + ahorro para estabilidad.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fca0"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Portafolio + métricas + optimización.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fca1"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Cashflow + liderazgo + escala.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fca2"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Diversificación creativa + marca personal.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fca3"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Sistemas + automatización + fondo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fca4"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Propósito + intuición con reglas.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fca5"
+      }
+    }
+  ],
+  "domain": "money",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fca6"
+  },
+  "id": 40,
+  "text": "Si tuvieras 10x ingresos, tú…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Irías por metas más grandes ya.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fca7"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Aseguras familia y ayudas.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fca8"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Inviertes y optimizas.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fca9"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Compras activos y poder.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcaa"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Creas proyectos épicos.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcab"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Construyes patrimonio sólido.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcac"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Te vuelves mentor/creador profundo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcad"
+      }
+    }
+  ],
+  "domain": "money",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fcae"
+  },
+  "id": 41,
+  "text": "Bajo estrés, tu impulso oscuro es…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Exploto / me vuelvo agresivo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcaf"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Me apego / necesito validación.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcb0"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Me vuelvo frío y calculador.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcb1"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Me vuelvo dominante e inflexible.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcb2"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Me pierdo en fantasía y evito.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcb3"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Me vuelvo perfeccionista y duro.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcb4"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Me cierro, sospecho, me vuelvo intenso.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcb5"
+      }
+    }
+  ],
+  "domain": "shadow",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fcb6"
+  },
+  "id": 42,
+  "text": "Cuando te sientes inseguro, tú…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Atacas primero.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcb7"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Pides amor/atención.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcb8"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Controlas con información.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcb9"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Controlas con autoridad.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcba"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Escapas mentalmente.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcbb"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Te rigidizas con reglas.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcbc"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Te vuelves enigmático y distante.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcbd"
+      }
+    }
+  ],
+  "domain": "shadow",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fcbe"
+  },
+  "id": 43,
+  "text": "Tu reacción tóxica más probable es…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Impulsar/pelear.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcbf"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Victimizarme/rogar.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcc0"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Manipular con lógica.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcc1"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Intimidar.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcc2"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Prometer sin sostener.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcc3"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Criticar y exigir.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcc4"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Castigar con silencio.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcc5"
+      }
+    }
+  ],
+  "domain": "shadow",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fcc6"
+  },
+  "id": 44,
+  "text": "En un conflicto de pareja bajo estrés, tú…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Entras fuerte.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcc7"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Suplicas conexión.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcc8"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Discutes con argumentos.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcc9"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Cortas o impones.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcca"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Te vas emocionalmente.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fccb"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Sacas lista de “fallas”.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fccc"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Te vuelves inaccesible.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fccd"
+      }
+    }
+  ],
+  "domain": "shadow",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fcce"
+  },
+  "id": 45,
+  "text": "Cuando sientes que pierdes control…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Me acelero.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fccf"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Me aferro.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcd0"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Me desconecto del corazón.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcd1"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Aprieto más.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcd2"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Me disperso.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcd3"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Me obsesiono con detalles.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcd4"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Me vuelvo oscuro/obsesivo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcd5"
+      }
+    }
+  ],
+  "domain": "shadow",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fcd6"
+  },
+  "id": 46,
+  "text": "Tu sombra se activa más cuando…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Te frenan.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcd7"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Te ignoran.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcd8"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Te subestiman.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcd9"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Te faltan al respeto.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcda"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Te encierran.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcdb"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Te desordenan.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcdc"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Te mienten.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcdd"
+      }
+    }
+  ],
+  "domain": "shadow",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fcde"
+  },
+  "id": 47,
+  "text": "Cuando estás herido, tú…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Hago daño de regreso.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcdf"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Me rompo y busco rescate.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fce0"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Me vuelvo hielo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fce1"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Me vuelvo juez.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fce2"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Desaparezco.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fce3"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Me vuelvo crítico.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fce4"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Me vuelvo sombra silenciosa.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fce5"
+      }
+    }
+  ],
+  "domain": "shadow",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fce6"
+  },
+  "id": 48,
+  "text": "Lo que más te cuesta admitir es…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Miedo a perder.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fce7"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Miedo a estar solo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fce8"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Miedo a sentir.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fce9"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Miedo a no ser suficiente.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcea"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Miedo a no lograr mi visión.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fceb"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Miedo al caos.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcec"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Miedo a confiar.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fced"
+      }
+    }
+  ],
+  "domain": "shadow",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fcee"
+  },
+  "id": 49,
+  "text": "Tu señal temprana de sombra es…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Impaciencia física.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcef"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Ansiedad por atención.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcf0"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Rumiar mental.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcf1"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Tensión de control.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcf2"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Procrastinación creativa.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcf3"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Rigidez corporal/orden excesivo.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcf4"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Silencio pesado.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcf5"
+      }
+    }
+  ],
+  "domain": "shadow",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6984ee51a2b88fc0bdd2fcf6"
+  },
+  "id": 50,
+  "text": "Tu antídoto más efectivo suele ser…",
+  "options": [
+    {
+      "value": 1,
+      "label": "Movimiento + objetivo claro.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcf7"
+      }
+    },
+    {
+      "value": 2,
+      "label": "Contacto humano + ternura.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcf8"
+      }
+    },
+    {
+      "value": 3,
+      "label": "Escribir plan simple + acción mínima.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcf9"
+      }
+    },
+    {
+      "value": 4,
+      "label": "Delegar + humildad.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcfa"
+      }
+    },
+    {
+      "value": 5,
+      "label": "Limitar opciones + rutina creativa.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcfb"
+      }
+    },
+    {
+      "value": 6,
+      "label": "Soltar “perfección” + priorizar 1 cosa.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcfc"
+      }
+    },
+    {
+      "value": 7,
+      "label": "Respirar + verdad + significado.",
+      "_id": {
+        "$oid": "6984ee51a2b88fc0bdd2fcfd"
+      }
+    }
+  ],
+  "domain": "shadow",
+  "__v": 0
+}]
