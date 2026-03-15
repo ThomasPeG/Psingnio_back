@@ -5,8 +5,8 @@ services:
   - type: web
     name: nest-backend
     env: node
-    # The root of the NestJS app is the root of this 'back' directory
-    rootDir: . 
+    # The root of the NestJS app is the 'back' directory inside the repo
+    rootDir: nest
     buildCommand: "npm install && npm run build"
     startCommand: "npm run start:prod"
     envVars:
