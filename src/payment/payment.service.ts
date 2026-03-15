@@ -63,7 +63,7 @@ export class PaymentService {
         clientSecret: paymentIntent.client_secret,
         publicKey: this.configService.get<string>('STRIPE_PUBLIC_KEY'),
       };
-    } catch (error) {
+    } catch (error: any) {
       this.logger.error(
         `Error creating payment intent: ${error.message}`,
         error.stack,
@@ -104,7 +104,7 @@ export class PaymentService {
         clientSecret: paymentIntent.client_secret,
         publicKey: this.configService.get<string>('STRIPE_PUBLIC_KEY'),
       };
-    } catch (error) {
+    } catch (error: any) {
       this.logger.error(
         `Error creating premium payment intent: ${error.message}`,
         error.stack,
@@ -132,7 +132,7 @@ export class PaymentService {
         signature,
         webhookSecret,
       );
-    } catch (err) {
+    } catch (err: any) {
       this.logger.error(
         `Webhook signature verification failed: ${err.message}`,
       );
@@ -141,10 +141,11 @@ export class PaymentService {
 
     // Handle specific event types
     switch (event.type) {
-      case 'payment_intent.succeeded':
+      case 'payment_intent.succeeded': {
         const paymentIntent = event.data.object;
         await this.handlePaymentSuccess(paymentIntent);
         break;
+      }
 
       case 'payment_intent.payment_failed': {
         const intent = event.data.object;
@@ -225,7 +226,7 @@ export class PaymentService {
       }
 
       return { status: paymentIntent.status, paid: false };
-    } catch (error) {
+    } catch (error: any) {
       this.logger.error(
         `Error syncing payment ${paymentIntentId}: ${error.message}`,
       );

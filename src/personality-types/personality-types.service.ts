@@ -5,7 +5,6 @@ import {
   PersonalityType,
   PersonalityTypeDocument,
 } from './schemas/personality-type.schema';
-import { PERSONALITY_TYPES_SEED } from './personality-types.seed';
 
 @Injectable()
 export class PersonalityTypesService implements OnModuleInit {
@@ -14,19 +13,7 @@ export class PersonalityTypesService implements OnModuleInit {
     private personalityTypeModel: Model<PersonalityTypeDocument>,
   ) {}
 
-  async onModuleInit() {
-    // console.log('Syncing Personality Types Seed...');
-    // for (const type of PERSONALITY_TYPES_SEED) {
-    //   await this.personalityTypeModel.updateOne(
-    //     { id: type.id },
-    //     {
-    //       $set: type,
-    //       $unset: { image_url: 1 } // Remove legacy field
-    //     },
-    //     { upsert: true },
-    //   );
-    // }
-    // console.log('Personality Types Synced');
+  onModuleInit() {
     console.log('Personality Types Sync SKIPPED (Manual Mode)');
   }
 

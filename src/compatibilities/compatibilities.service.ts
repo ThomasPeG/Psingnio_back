@@ -81,13 +81,13 @@ export class CompatibilitiesService implements OnModuleInit {
 
   async findByArchetype(archetypeId: string): Promise<Compatibility[]> {
     const idToName: Record<string, string> = {
-      'T1': 'el impulso',
-      'T2': 'el vinculo',
-      'T3': 'el estratega',
-      'T4': 'el soberano',
-      'T5': 'el visionario',
-      'T6': 'el arquitecto',
-      'T7': 'el alquimista',
+      T1: 'el impulso',
+      T2: 'el vinculo',
+      T3: 'el estratega',
+      T4: 'el soberano',
+      T5: 'el visionario',
+      T6: 'el arquitecto',
+      T7: 'el alquimista',
     };
 
     const name = idToName[archetypeId];

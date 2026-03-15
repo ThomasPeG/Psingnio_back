@@ -12,4 +12,5 @@ export class ArchivedPayment {
   originalUserId: Types.ObjectId;
 }
 
-export const ArchivedPaymentSchema = SchemaFactory.createForClass(ArchivedPayment);
+export const ArchivedPaymentSchema =
+  SchemaFactory.createForClass(ArchivedPayment);

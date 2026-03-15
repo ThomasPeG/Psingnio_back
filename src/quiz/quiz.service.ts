@@ -254,7 +254,8 @@ export class QuizService {
           _id: attempt.attemptId,
           date: (attempt as any).createdAt,
           score: 0, // Placeholder
-          resultTypeId: attempt.calculated_type_id.toString(),
+          resultTypeId: attempt.calculated_type_id,
+          secondaryTypeId: attempt.secondary_type_id, // Add secondary ID
           resultTypeName: type ? type.name : 'Unknown',
           snippet: type ? type.description_preview : '',
           is_paid: !!attempt.is_paid,

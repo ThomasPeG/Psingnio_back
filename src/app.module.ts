@@ -13,6 +13,7 @@ import { PaymentModule } from './payment/payment.module';
 import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
 import { CompatibilitiesModule } from './compatibilities/compatibilities.module';
+import { AiModule } from './ai/ai.module';
 
 @Module({
   imports: [
@@ -21,7 +22,7 @@ import { CompatibilitiesModule } from './compatibilities/compatibilities.module'
     }),
     MongooseModule.forRootAsync({
       imports: [ConfigModule],
-      useFactory: async (configService: ConfigService) => ({
+      useFactory: (configService: ConfigService) => ({
         uri: configService.get<string>('MONGO_URI'),
       }),
       inject: [ConfigService],
@@ -39,6 +40,7 @@ import { CompatibilitiesModule } from './compatibilities/compatibilities.module'
     UsersModule,
     AuthModule,
     CompatibilitiesModule,
+    AiModule,
   ],
   controllers: [AppController],
   providers: [
