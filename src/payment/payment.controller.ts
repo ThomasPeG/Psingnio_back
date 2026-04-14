@@ -1,6 +1,7 @@
 import {
   Controller,
   Post,
+  Get,
   Body,
   Headers,
   Req,
@@ -56,5 +57,10 @@ export class PaymentController {
       throw new BadRequestException('paymentIntentId is required');
     }
     return this.paymentService.syncPayment(paymentIntentId);
+  }
+
+  @Get('prices')
+  getPrices() {
+    return this.paymentService.getPrices();
   }
 }

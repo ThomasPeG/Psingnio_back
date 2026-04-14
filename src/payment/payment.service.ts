@@ -43,7 +43,8 @@ export class PaymentService {
 
     // Amount should be configured in env or database.
     // Example: $9.99 = 999 cents
-    const amount = this.configService.get<number>('STRIPE_PRICE_AMOUNT') || 999;
+    const envPrice = this.configService.get('STRIPE_FULL_RESULT_PRICE');
+    const amount = envPrice ? Number(envPrice) : 299; // Defaulting to the value in .env as fallback
     const currency = this.configService.get<string>('STRIPE_CURRENCY') || 'usd';
 
     try {
@@ -83,8 +84,8 @@ export class PaymentService {
     }
 
     // Amount for premium subscription/upgrade
-    const amount =
-      this.configService.get<number>('STRIPE_PREMIUM_PRICE_AMOUNT') || 2999;
+    const envPremiumPrice = this.configService.get('STRIPE_PREMIUM_SUBSCRIPTION_PRICE');
+    const amount = envPremiumPrice ? Number(envPremiumPrice) : 199; // Defaulting to the value in .env as fallback
     const currency = this.configService.get<string>('STRIPE_CURRENCY') || 'usd';
 
     try {
@@ -232,5 +233,21 @@ export class PaymentService {
       );
       throw new BadRequestException('Could not verify payment status');
     }
+  }
+
+  getPrices() {
+    const envPrice = this.configService.get('STRIPE_FULL_RESULT_PRICE');
+    const priceAmount = envPrice ? Number(envPrice) : 299;
+
+    const envPremiumPrice = this.configService.get('STRIPE_PREMIUM_SUBSCRIPTION_PRICE');
+    const premiumPriceAmount = envPremiumPrice ? Number(envPremiumPrice) : 199;
+
+    const currency = this.configService.get<string>('STRIPE_CURRENCY') || 'usd';
+
+    return {
+      priceAmount,
+      premiumPriceAmount,
+      currency,
+    };
   }
 }
