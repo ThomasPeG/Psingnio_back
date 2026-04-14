@@ -20,6 +20,7 @@ export class AiController {
       createChatDto.message,
       createChatDto.archetypeId,
       createChatDto.secondaryArchetypeId,
+      createChatDto.mode,
     );
   }
 

@@ -1,4 +1,4 @@
-import { IsNotEmpty, IsString, IsNumber } from 'class-validator';
+import { IsNotEmpty, IsString, IsNumber, IsOptional, IsIn } from 'class-validator';
 
 export class CreateChatDto {
   @IsString()
@@ -12,4 +12,9 @@ export class CreateChatDto {
   @IsNumber()
   @IsNotEmpty()
   secondaryArchetypeId: number;
+
+  @IsOptional()
+  @IsString()
+  @IsIn(['mentor', 'friend'])
+  mode?: 'mentor' | 'friend';
 }
